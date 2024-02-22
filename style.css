@@ -1,0 +1,228 @@
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Roboto','sans-serif';
+    color: white;
+}
+.curriculo{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.aboutme {
+    background-color: #0d2337;
+    width: 40%;
+    height: 100%;
+    text-align-last: center;
+}
+.aboutme .foto{
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: 15px solid #22566b;
+    border-style: double;
+    filter: drop-shadow(0px 0px 10px black);
+}
+.aboutme #nome{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+.aboutme hr{
+    margin: 0;
+}
+.aboutme .cargo{
+    font-weight: 300;   
+    max-width: 70%;
+    text-align: center;
+    margin: .5rem auto .7rem auto;
+    font-size: 24px;
+}
+.aboutme .description{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    font-weight: 300;    
+    max-width: 70%;
+    font-size: 15px;
+    text-align: center;
+}
+.aboutme .subTitle{
+    font-weight: 300;    
+    font-size: 25px;
+    max-width: 70%;
+    text-align-last: start;
+    margin: .5rem 3rem;
+    text-decoration: underline;
+    text-decoration-color: #22566b;
+    text-underline-offset: .4rem;
+    letter-spacing: 3px;
+}
+.contatos, .idiomas {
+    padding-left: 1rem;
+}
+.contato, .idioma{
+    display: flex;
+    padding: 0 .5rem;
+    margin: .5rem 0;
+    text-align-last: left;
+}
+.contato img{
+    filter: invert();
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 1rem;
+}
+.contato a,.contato span{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 300;   
+    margin: 0;
+    max-width: 70%;
+}
+.contato a:hover{
+    cursor: pointer;
+}
+.idioma img{
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 1rem;
+}
+.idioma span{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 300;   
+    margin: 0;
+    max-width: 70%;
+}
+
+.informations{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.informations *{
+    text-align: center;
+}
+
+.informations .softSkillsTab, .formacao, .hardSkillsTab{
+    height: 26%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center; 
+}
+.informations .sideTitle{
+    height: 80%;
+    color: white;
+    background-color: #22566b;
+    border-radius: 1rem 0 0 1rem;
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.informations .softSkills, .hardSkills{
+    display: flex;
+    margin-left: 1rem;
+    width: 100%;
+}
+.informations .softSkills ul, .hardSkills ul{
+    list-style: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.informations .softSkills li, .hardSkills li{
+    text-align-last: center;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    padding: .3rem;
+    font-size: 20px;
+    height: auto;
+    margin-right: 1rem;
+    color: white;
+    background-color: #22566b ;
+}
+.infoFormacao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: 24px;
+}
+.infoFormacao .estado{
+    color: #22566b;
+}
+.infoFormacao .escola{
+    color: black;
+}
+.infoFormacao .previsao{
+    color:gray
+}
+@media screen and (max-width: 890px) {
+    body{
+        width: 100%;
+    }
+    .aboutme {
+        width: 40%;
+    }
+    .contatos{
+        padding-left: 0rem;
+    }
+    .contato{
+        padding: 0;
+    }
+    .contato a, span{
+        font-size: 15px;
+    }
+    .aboutme .subTitle{
+        font-size: 20px;
+        margin: .5rem 2rem;
+    }
+    .aboutme .contato a{
+        text-wrap: wrap;
+         word-wrap: break-word
+    }
+    .informations .sideTitle{
+        font-size: 18px;
+    }
+    .informations .softSkills ul, .hardSkills ul{
+        list-style: none;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: .8rem;
+    }
+    .informations .softSkills li,.hardSkills li{
+        text-align-last: center;
+        margin-bottom: 8px;
+        border-radius: 1rem;
+        padding: .3rem;
+        font-size: 15px;
+    }
+    .idiomas{
+        padding: 0;
+    }
+    .idioma{
+        padding: 0;
+    }
+    .idioma span{
+        font-size: 15px;
+    }
+    .infoFormacao{
+        padding: 0.8rem;
+        margin-left: 1rem;
+    }
+}
